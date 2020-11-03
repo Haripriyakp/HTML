@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CarRacingGame</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+   
+    <style type="text/css">
+    /* add the style now to design the game */
+    body{
+        height:100%;
+        width:100%;
+        margin:0;
+        background:rgba(0,0,255,.4);
+        font-family: 'Josefin Sans' , sans-serif;
+        background-position: center;
+
+
+    }
+    #Score-div{
+        position: absolute;
+        margin-top:20%;
+        margin-left: 10%;
+        font-size:25px;
+        background: white;
+        color:#454545;
+        padding:15px;
+        -webkit-box-shadow:4px 4px 4px 1px #808080;
+        box-shadow: 4px 4px 4px 1px #808080;
+
+    }
+    #score-div p{
+        height:20px;
+    }
+    #container{
+        width:40px;
+        height:100vh;
+        left:35%;
+        background:#333;
+        overflow:hidden;
+        position: relative;
+    }
+    .line{
+        width:4%;
+        height: 30vh;
+        background:rgba(255,255,255, .8);
+        position: absolute;
+        margin-left: 48%;
+    }
+    /* Style the lines of road*/
+    #line-1{
+        top:-150px;
+
+    }
+    #line-2{
+        top:150px;
+
+    } #line-3{
+        top:450px;
+
+    }
+    /* now style the car*/
+    .car{
+        position:absolute;
+        widows: 40px;
+        height:60px;
+        border-radius: 5px;
+        -webkit-box-shadow:3px 3px 3px blink;
+        box-shadow:3px 3px 3px blink;
+
+    }
+    #car{
+        bottom:10px;
+        left:60px;
+        background:red;
+    }
+    .f-glass,
+    .b-galss{
+        width:60%;
+        height:20%;
+        background:#484848;
+        position:absolute;
+        margin-left:20%;
+
+    }
+
+    .f-glass{
+        top:15px;
+        border-radius: 5px 5px 0 0;
+
+    }
+    .b-glass{
+        bottom:15px;
+        border-radius:0 0 5px 5px;
+
+    }
+    .f-light-l,
+    .b-light-r{
+        position:absolute;
+        width:20%;
+        height:10%;
+        background:#efefef;
+        top:-6%;
+        margin-left:10%;
+        border-radius:5px 5px 0 0;
+
+
+    }
+    .f-light-r{
+        margin-left:70%
+    }
+    .f-tyre-l,
+    .f-tyre-r,
+    .b-tyre-l,
+    .b-tyre-r{
+        position:absolute;
+        height:20%;
+        widows:10%;
+        background:grey;
+
+    }
+    .f-tyre-l{
+        top:20%;
+        left:-10%;
+        border-radius:5px 5px 0 0;
+
+    }
+    .b-tyre-r{
+
+        bottom:20%;
+        left:100%;
+        border-radius: 5px 5px 0 0;
+
+    }
+    #car-1{
+        top:-100%;
+        left:60%;
+        border-radius:green;
+
+    }
+    #car-2{
+        top: -200%;
+        left:40%;
+        background:red;
+    }
+    #car-3{
+        top:-350%;
+        left:45%;
+        background:#26c5ff;
+        
+    }
+    #restart-div{
+        position:absolute;
+        top:0%;
+        left:0;
+        width:100%;
+        height:100vh;
+        display:none;
+
+    }
+    #restart{
+        display:block;
+        width:50%;
+        height:80px;
+        background:#8a64ff;
+        color:#fff;
+        font-size:25px;
+        border:none;
+        outline:none;
+        margin-left: 20%;
+        margin-top:50%;
+
+    }
+
+
+  
+    </style>
+</head>
+<body>
+    
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600" rel="stylesheet">
+    
+    <div id="score-div">
+        <span>score :</span>
+        <span id="score">0</span>
+    </div>
+    <div id="container">
+
+    <!--Start to make the road-->
+    <div class="line" id="line-1"></div>
+    <div class="line" id="line-2"></div>
+    <div class="line" id="line-3"></div>
+
+    <div class="car" id="car-1">
+        <!-- design the car's part like tyres glass light etc..-->
+        <div class="f-glass"></div>
+        <div class="f-light-l"></div>
+        <div class="f-light-r"></div>
+        <div class="f-light-l"></div>
+        <div class="f-tyre-r"></div>
+        <div class="b-tyre-l"></div>
+        <div class="b-tyre-r"></div>
+        <div class="b-glass"></div>
+    </div>
+
+    <div class="car" id="car-2">
+        <!-- design the car's part like tyres glass light etc..-->
+        <div class="f-glass"></div>
+        <div class="f-light-l"></div>
+        <div class="f-light-r"></div>
+        <div class="f-light-l"></div>
+        <div class="f-tyre-r"></div>
+        <div class="b-tyre-l"></div>
+        <div class="b-tyre-r"></div>
+        <div class="b-glass"></div>
+    </div>
+    <div class="car" id="car-3">
+        <!-- design the car's part like tyres glass light etc..-->
+        <div class="f-glass"></div>
+        <div class="f-light-l"></div>
+        <div class="f-light-r"></div>
+        <div class="f-light-l"></div>
+        <div class="f-tyre-r"></div>
+        <div class="b-tyre-l"></div>
+        <div class="b-tyre-r"></div>
+        <div class="b-glass"></div>
+    </div>
+    <div id="restart-div">
+        <button id="restart">
+            Click to restart
+        </button>
+
+    </div>
+</div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script type="text/javascript">
+    $(function () {
+        "use strict";
+        var anim id;
+        //saving the DOM objects to variable
+        var container =$('#container'),
+        var line      =$('#line') ,
+        var line_1    =$('#line-1'),
+        var line_2    =$('#line-2'),
+        var line_3    =$('#line-3'),
+        var car       =$('#car'),
+        var car_1     =$('#car-1'),
+        var car_2     =$('#car-2'),
+        var car_3     =$('#car-3'),
+        restart_div   =$("#restart-div"),
+        restart_div   =$("#restart"),
+        restart_div   =$("#score");
+        //saving some initial settings
+        var container_left = parseInt(container.css('left')),
+        container_width    = parseInt(container.css('width')) ,
+        container_height   = parseInt(container.css('height')) ,
+        car_width          = parseInt(car.css('width')),
+        car_height         =parseInt(car.css('height'));
+
+
+
+        //some other variables
+        var game_over =false,
+        score_counter = 1,
+        car_speed     =2,
+        line_speed    = 5;
+
+
+        //=====start game coding now
+        $(window).on('keydown' , function(e) {
+            var key = e.which;//defining the key to press and move
+            if(game_over === false) {
+                if (key == 37) {
+                    if(parseInt(car.css('right')) < (container_width - car_width - 20)) {
+                        car.animate ({ left: "-=20px"}, 30);
+                    }
+                }else if (key == 39) {
+                    if(parseInt(car.css('left')) < (container_width - car_width - 20)){
+                        car.animate({ left: "+=20px"},30 );
+
+                    }
+                }
+            } else if(key == 38) {
+                if(parseInt(car.css('bottom')) < (container_width - car_width -20)) {
+                    car.animate({ bottom: "+=20px"}, 30);
+                }
+            }
+        }else if (key == 40){
+            if(parseInt(car.css('top')) < (container_width - car_width -20)) {
+                car.animate({top: "-=20px" },40);
+            }
+        }
+
+        })
+
+
+
+    
+    
+    
+    
+    
+    
+    </script>
+</body>
+</html>

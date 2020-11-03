@@ -1,0 +1,3 @@
+$(function () {
+    Oneroof.init('#box');
+});

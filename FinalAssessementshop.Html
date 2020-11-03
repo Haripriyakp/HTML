@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  background-color:burlywood;
+ 
+  height: 100px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color:rgb(233, 205, 92);
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:burlywood;
+   color: white;
+   text-align: center;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background:chocolate;
+  color: white;
+  float: right;
+}
+
+.fa-twitter {
+  background: chocolate;
+  color: white;
+  float: right;
+}
+.fa-instagram {
+  background: chocolate;
+  color: white;
+  float: right;
+}
+.header1 {
+  overflow: hidden;
+ margin-left: 50px;
+ 
+  height: 100px;
+}
+
+paragraph {
+  color: #555;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  padding: 20px;
+}
+
+.title {
+  font-size: 24px;
+  color: #222;
+  line-height: 24px;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+.header1 {
+  overflow: hidden;
+  background-color:blanchedalmond;
+ 
+  height: 100px;
+}
+
+
+
+    </style>
+    </head>
+    <body>
+        <div  class="header">
+   
+            <a><h1><img src="download (2).png" alt="logo" width="50px" height="50px"/>My Interiors</h1></a><br> <br>
+             
+             <div class="header-right">
+               <a  href="FinalAssessementHomepage.Html">Home</a>
+               <a class="active" >Shop</a>
+               <a href="FinalAssessementContactUs.Html">Contact</a>
+               <a href="FinalAssessementAbout.Html">About</a>
+             </div>
+           </div>
+           <div class="header1">
+            <h1 style="text-align: center;" > SHOP NOW</h1>
+            </div>
+           <div>
+            <h2 style="text-align: center;color: lightskyblue;" >During Level 3 we will be Open 11am-3.00pm every day of the week!</h2>
+            <h3 style="text-align: center;">Normally we are open 10am-5.30pm every day of the week!</h3>
+            <h3 style="text-align: center;">Our Price Guarantee: If you find a lower price on an identical product which is currently in-stock within NZ we will beat it by 15%*</h3>
+            </div><br><br>
+            <div class="header1">
+                <a href="#LIVING ROOM">LIVING ROOM</a>
+               <a href="#DINING ROOM" >DINING ROOM</a>
+               <a href="#KITCHENWARE">KITCHENWARE</a>
+               <a href="#ACCESSORIES & ART">ACCESSORIES & ART</a>
+               <a href="#FURNITURE">FURNITURE</a>
+               <a href="#NEW IN">NEW IN</a>
+               <a href="#BEDROOM">BEDROOM</a>
+                
+                </div>
+                <div class="about-section">
+                    <h1>Some of our Products</h1>
+                   
+                  </div>
+                  <h2>Tables</h2>
+                  
+                  
+                  <div class="row">
+                    <div class="column">
+                      <div class="card">
+                        <img src="4904_500_650.jpg" alt="Jane" style="width:100%">
+                        <div class="container">
+                         
+                          <p class="title">COMO RECTANGLE DINING TABLE + 6 chairs<br>$2,499.00</p>
+                          <p> Description<br>A modern-classic investment, the rectangular Como dining<br> set with dark glass table and x6 velvet chairs <br>radiates luxury living. With sleek & simple italian<br> design elements, this is sure to impress</p>
+                          
+                          <p><button class="button">ShopNow</button></p>
+                        </div>
+                        </div>
+                        </div>
+
+
+                        <div class="row">
+                          <div class="column">
+                            <div class="card">
+                              <img src="view" alt="Jane" style="width:100%">
+                        <a><div class="container">
+                         
+                          <p class="title">Wood/metal Coffee Table<br>$552.00</p>
+                          <p>Description<br>
+                            A stylish multi-functional coffee table for the home or office.<br> Made from MDF, fir wood & iron and weighs 13Kgs.<br> It measures D800 x H400mm. Made in China</p>
+                          
+                          <p><button class="button">ShopNow</button></p>
+                              </div>
+                              </div>
+                              </div>
+
+                        
+                    </div>
+                    <h2>Mirrors</h2>
+                    <div class="row">
+                      <div class="column">
+                        <div class="card">
+                          <img src="fcdb5234f3c2f82da3ab69f089309c29--decorative-frames-beautiful-mirrors.jpg"alt="Jane" style="width:100%">
+                          <div class="container">
+                           
+                            <p class="title">Hill Interiors Deanery Collection Plank Mirror<br>$417.31</p>
+                            <p> Description<br>Material: wood. Plank mirror from The Deanery Collection.<br> Minimal, no-fuss design the mirror. Will add a sense of style <br>with a rustic twist to any interior. Natural finish will fit seamlessly <br>into many interiors. Will remain timeless in style.</p>
+                            
+                            <p><button class="button">ShopNow</button></p>
+                          </div>
+                          </div>
+                          </div>
+  
+  
+                          <div class="row">
+                            <div class="column">
+                              <div class="card">
+                                <img src="1057611_00_default_1.webp" alt="Jane" style="width:100%">
+                          <a><div class="container">
+                           
+                            <p class="title">Brooklyn Oakley Mirror White Wash 840x1000mm<br>Now $314.99</p>
+                            <p>Description<br>
+                               environmentally friendly copper-free mirror, aluminum alloy + PVC <br>light box, 5050 high-bright soft light strip, Bluetooth stereo,<br> touch switch. The light bar power is 24 W, <br>the waterproof level is IP 67, and it can only be hung longitudinally.    </p>
+                            
+                            <p><button class="button">ShopNow</button></p>
+                                </div>
+                                </div>
+                                </div>
+  
+                          
+                      </div>
+                      <h2>Lights </h2>
+                      <div class="row">
+                        <div class="column">
+                          <div class="card">
+                            <img src="shopping.webp"alt="Jane" style="width:100%">
+                            <div class="container">
+                             
+                              <p class="title">Candle-Style Design<br>$351.63</p>
+                            <p> Description<br>6-Light 55(21.7") Crystal Chandelier Crystal Glass <br>Candle-style Electroplated Traditional / Classic 110-120V / 220-240V </p>
+                              
+                              <p><button class="button">ShopNow</button></p>
+                            </div>
+                            </div>
+                            </div>
+    
+    
+                            <div class="row">
+                              <div class="column">
+                                <div class="card">
+                                  <img src="5d21afeebd7e6f0d8fc62644-large.jpg" alt="Jane" style="width:100%">
+                            <a><div class="container">
+                             
+                              <p class="title">Modern Chrome<br>$55</p>
+                              <p>Description<br>
+                                Modern Chrome / Gold plating led Ceiling Lustre chandelier<br> Living Room Cristal Lustre Chandeliers Lighting Pendant<br> Hanging Ceiling Fixtures</p>
+                              
+                              <p><button class="button">ShopNow</button></p>
+                                  </div>
+                                  </div>
+                                  </div>
+    
+                            
+                        </div>
+                        <h2>Mattresses </h2>
+                      <div class="row">
+                        <div class="column">
+                          <div class="card">
+                            <img src="shopping (1).webp"alt="Jane" style="width:100%">
+                            <div class="container">
+                             
+                              <p class="title"> SUPER KING <br>$399.99</p>
+                            <p> Description<br>Betalife Ultra Comfort Memory Foam Mattress - SUPER KING</p>
+                              
+                              <p><button class="button">ShopNow</button></p>
+                            </div>
+                            </div>
+                            </div>
+    
+    
+                            <div class="row">
+                              <div class="column">
+                                <div class="card">
+                                  <img src="shopping (2).webp" alt="Jane" style="width:100%">
+                            <a><div class="container">
+                             
+                              <p class="title">KING SINGLE<br>$259.99 </p>
+                              <p>Description<br>
+                                Betalife Premier Back Support Mattress <br>- KING SINGLE </p>
+                              
+                              <p><button class="button">ShopNow</button></p>
+                                  </div>
+                                  </div>
+                                  </div>
+    
+                            
+                        </div>
+                        <h2>Outdoor </h2>
+                        <div class="row">
+                          <div class="column">
+                            <div class="card">
+                              <img src="shopping (3).webp"alt="Jane" style="width:100%">
+                              <div class="container">
+                               
+                                <p class="title"> KETER CORFU LOUNGE SET<br>$$799 </p>
+                              <p> Description<br>This contemporary rattan-style outdoor furniture <br>set brings a touch of the Greek islands to any backyard,<br> patio, deck or pool area and is the perfect<br> way to relax this summer.</p>
+                                
+                                <p><button class="button">ShopNow</button></p>
+                              </div>
+                              </div>
+                              </div>
+      
+      
+                              <div class="row">
+                                <div class="column">
+                                  <div class="card">
+                                    <img src="shopping.png" alt="Jane" style="width:100%">
+                              <a><div class="container">
+                               
+                                <p class="title">Nouveau<br>$499 </p>
+                                <p>Description<br>
+                                  Nouveau Canzo Outdoor<br> Bistro Setting 3 Piece </p>
+                                
+                                <p><button class="button">ShopNow</button></p>
+                                    </div>
+                                    </div>
+                                    </div>
+      
+                              
+                          </div>
+
+                     
+                      
+                       
+
+
+
+
+
+
+
+
+
+
+                </div><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           <div class="footer">
+            <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Add font awesome icons -->
+<a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-instagram "></a>
+           </div>
+
+
+    
+</body>
+</html>

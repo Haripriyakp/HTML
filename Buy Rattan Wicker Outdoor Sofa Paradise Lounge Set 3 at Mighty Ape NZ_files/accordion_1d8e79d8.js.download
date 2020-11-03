@@ -1,0 +1,1 @@
+MA.accordion=function(container){var $container=$(container);var $title=$container.find('h3.title');var $content=$container.find('div.content');$content.hide();$title.click(function(e){if($(this).hasClass('active')){$(this).next($content).slideUp(300);$(this).removeClass('active');}else{$(this).next($content).slideDown(300);$(this).addClass('active');}});};

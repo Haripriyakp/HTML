@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+      ul{
+            list-style-type:none;
+            margin:0;
+            padding:0;
+            width: 100%;
+            
+            background-color: #333;
+            position: fixed;
+            height: 25%;
+           
+        }
+        /*Fixed Top*/
+        ul{
+            position: fixed;
+            top:0;
+            width:100%;
+        }
+        /*fixed bottom*/
+       /* ul{
+            position: fixed;
+            bottom: 0%;
+            width: 100%;
+        }*/
+        
+        li{
+            /*display: inline;*/
+            float: left;
+        }
+        li a{
+            display:block ;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+
+        }
+        /*Change the link color to #111(black) on hover*/
+        li a:hover{
+            background-color: #111;
+             color: tomato;
+        
+        }
+        li a.active{
+            background-color:#4CAF50;
+            color: chartreuse;
+        }
+        li{
+            border-right:1px solid #bbb;
+        }
+        li:last-child{
+            border-right:none ;
+
+        }
+       
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a  href="#Home">Home</a></li>
+        <li><a href="#News">News</a></li>
+        <li><a href="#Contact">Contact</a></li>
+        <li style="float:right"><a class="active" href="#about">about</a></li>
+        
+    </ul>
+    <div style="margin-top: 25%;padding: 1px 16px;width: 1000px;">
+        <H4>Fixed top Nav</H4>
+        <p>The Navigation Bar will stay at the top of the page while scrolling  </p>
+        <h1>some text..some text..</h1>
+    </div>
+</body>
+</html>
